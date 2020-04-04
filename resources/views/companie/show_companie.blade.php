@@ -31,7 +31,7 @@
 
                             <div class="form-group">
                                     <label for="email" class="col-sm-4 control-label">Email</label>
-                                    <label for="email" class="col-sm-4 control-label">{{ $companie->name }}</label>
+                                    <label for="email" class="col-sm-4 control-label">{{ $companie->email }}</label>
                             </div>
 
                             <div class="form-group">
