@@ -8,7 +8,7 @@
            
             <ol class="breadcrumb" align="center">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li class="active">Companie View</li>
+                <li class="active">Company View</li>
             </ol>
         </section>
         <!-- Main content -->
@@ -19,12 +19,12 @@
                 <div class="row">
                     <div class="box box-info">
                         <div class="box-header with-border">
-                            <h3 class="box-title">Companie View</h3>
+                            <h3 class="box-title">Company View</h3>
                         </div>
                         <form class="form-horizontal" action="{{ route('companie.update',$companie->id)}}" method="POST" enctype="multipart/form-data">
                             <div class="box-body">
                              <div class="form-group">
-                                    <label for="name" class="col-sm-4 control-label">Companie Name</label>
+                                    <label for="name" class="col-sm-4 control-label">Company Name</label>
 
                                     <label for="name" class="col-sm-4 control-label"> {{ $companie->name }}</label>
                             </div>

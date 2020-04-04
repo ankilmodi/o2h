@@ -12,9 +12,9 @@
                 @endif
                 <div class="box">
                     <div class="box-header box-header-title">
-                        <h3 class="box-title">COMPANIE LIST</h3>
+                        <h3 class="box-title">Company LIST</h3>
                         <a href="{{ route('companie.create') }}" class="btn btn-success pull-right"><i
-                                    class="fa fa-plus-square"></i> Create New Companie</a>
+                                    class="fa fa-plus-square"></i> Create New Company</a>
                     </div>
                     <div class="box-body">
                         <table id="myTable" class="table table-bordered table-striped">

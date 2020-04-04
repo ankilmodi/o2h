@@ -69,9 +69,13 @@ class CompanieController extends Controller
 
         try {   
 
-             $imageName = time().'.'.request()->logo->getClientOriginalExtension();
-             request()->logo->move(public_path('storage/app/public'), $imageName);
-             
+             if(!empty($request->logo)){
+                $imageName = time().'.'.request()->logo->getClientOriginalExtension();
+                request()->logo->move(public_path('storage/app/public'), $imageName);
+            }else{
+                $imageName = '';
+            }    
+   
              Companie::create([
                 'name' => $request->name,
                 'email' => $request->email,

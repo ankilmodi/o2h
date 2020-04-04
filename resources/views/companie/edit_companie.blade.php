@@ -8,7 +8,7 @@
            
             <ol class="breadcrumb" align="center">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li class="active">Edit Companie</li>
+                <li class="active">Edit Company</li>
             </ol>
         </section>
         <!-- Main content -->
@@ -24,17 +24,17 @@
                 <div class="row">
                     <div class="box box-info">
                         <div class="box-header with-border">
-                            <h3 class="box-title">Edit Companie</h3>
+                            <h3 class="box-title">Edit Company</h3>
                         </div>
                         <form class="form-horizontal" action="{{ route('companie.update',$companie->id)}}" method="POST" enctype="multipart/form-data" data-parsley-validat >
                             <div class="box-body">
                                 @csrf
                                 @method('PUT')
                              <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                                    <label for="name" class="col-sm-4 control-label">Companie Name</label>
+                                    <label for="name" class="col-sm-4 control-label">Company Name</label>
                                     <div class="col-sm-5">
                     <input type="text" class="form-control" id="name" name="name"
-                                     value="{{ $companie->name }}"  placeholder="Enter Companie Name">
+                                     value="{{ $companie->name }}"  placeholder="Enter Company Name">
                                         @if ($errors->has('name'))
                                             <span class="help-block">
                                         <strong>{{ $errors->first('name') }}</strong>
